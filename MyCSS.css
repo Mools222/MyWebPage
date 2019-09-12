@@ -1,0 +1,295 @@
+/**********************************************************************************/
+/* Style the entire body */
+/**********************************************************************************/
+
+* {
+    box-sizing: border-box; /* If you set box-sizing: border-box; padding and border are included in the width and height */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/**********************************************************************************/
+/* Header */
+/**********************************************************************************/
+
+/* Style the header */
+.header {
+    padding: 20px;
+    text-align: center;
+    /*background: dodgerblue;*/
+    background: radial-gradient(circle, blue 0%, dodgerblue 100%);
+    color: white;
+}
+
+/* Style the header text */
+.header h1 {
+    font-size: 2.5em;
+    margin: 15px;
+}
+
+.header p {
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+/**********************************************************************************/
+/* Top navigation bar */
+/**********************************************************************************/
+
+/* Style the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: center; /* Perfect centering (https://www.w3schools.com/css/css3_flexbox.asp) */
+    align-items: center; /* Perfect centering */
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1; /* Without this, the image (id="pepe") overlaps the nav bar when it spins */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover:not(.navactive) {
+    background-color: midnightblue;
+}
+
+/* Active nav bar link gets a different color */
+.navactive {
+    background-color: midnightblue;
+}
+
+/* Style the search bar */
+#searchbar {
+    width: 20%;
+    margin-left: auto; /*Place the search bar to the right*/
+}
+
+/* Style the <input> element of the search bar */
+#searchbar input {
+    font-size: 16px;
+    background-color: white;
+    background-image: url('images/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 14px 20px 14px 40px;
+    width: 100%;
+    border: 3px solid #333;
+    border-radius: 6px;
+}
+
+/**********************************************************************************/
+/* Column container */
+/**********************************************************************************/
+
+.row {
+    display: flex;
+    flex-wrap: nowrap; /* If you pick "wrap" instead it will wrap the elements before the media query kicks in */
+    /*flex-direction: row; !* This seems to be the default *!*/
+    /*justify-content: center; !* I don't need this since I'm setting the width of the columns *!*/
+}
+
+/**********************************************************************************/
+/* Create 3 unequal columns that sit next to each other */
+/**********************************************************************************/
+
+/* 2 side columns */
+.side {
+    flex: 25%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+
+/* 1 middle column */
+.middle {
+    flex: 50%;
+    background-color: white;
+    padding: 20px;
+}
+
+/**********************************************************************************/
+/* Things that sit in the left side column */
+/**********************************************************************************/
+
+/* Left image */
+.side img {
+    width: 60%;
+    max-width: 60%;
+}
+
+/* Used to rotate the image */
+.rotate {
+    animation: rotation 1s infinite linear;
+}
+
+/* Used to rotate the image */
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+/* Style the left table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #000;
+}
+
+/* Style the table header */
+th {
+    background-color: midnightblue;
+    color: white;
+    /*white-space: nowrap;*/
+}
+
+/* Style the table header and table data */
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+td:first-child {
+    padding-right: 30px;
+}
+
+/* Style the even table rows */
+tr:nth-child(even) {
+    background-color: white
+}
+
+/**********************************************************************************/
+/* Things that sit in the middle column */
+/**********************************************************************************/
+
+.middle img {
+    width: 60%;
+    max-width: 60%;
+    border: 1px solid #000;
+}
+
+iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+}
+
+#music {
+    display: none;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: 10px solid midnightblue;
+    text-align: center;
+    font-size: 10vw;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 12px;
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+}
+
+button:hover {
+    background-color: midnightblue;
+    color: white;
+
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/**********************************************************************************/
+/* Things that sit in the right side column */
+/**********************************************************************************/
+
+/* Unordered list */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 2px solid #555;
+    border-bottom: none;
+}
+
+/* <a> children in the unordered list */
+li > a { /* Use the child selector (<) to only select <a> children of <li> */
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 1.2em;
+    background-color: #aaa;
+    text-align: center;
+    border-bottom: 2px solid #555;
+}
+
+/* When hovering over <a> children in the unordered list */
+li > a:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Add / remove this class when the link is clicked. This was the hover effect isn't broken by JS */
+.active {
+    background-color: #555;
+    color: white;
+}
+
+/* <p> elements in the unordered list */
+li p {
+    border: 2px solid black;
+    margin:0;
+    padding: 8px 16px;
+    display: none;
+    /*visibility: hidden;*/
+}
+
+li p a {
+    word-break: break-all; /* Without this, Chrome refuses to break links, which breaks the Flexbox width */
+}
+
+/**********************************************************************************/
+/* Footer */
+/**********************************************************************************/
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+.footer p {
+margin: 10px;
+}
+
+/**********************************************************************************/
+/* Responsive layout
+/**********************************************************************************/
+
+/*When the screen is less than 800px wide, stack the 3 columns on top of each other and change the layout of the nav-bar to vertical */
+@media screen and (max-width: 800px) { /* Media query */
+    .row, .navbar {
+        flex-direction: column;
+    }
+    #searchbar {
+        margin-left: initial; /*Place the search bar to the left*/
+        width: 100%
+    }
+}
+

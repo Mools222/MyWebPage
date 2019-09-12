@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web page about Morten Olsen">
+    <meta name="keywords" content="Morten,Olsen,web page,">
+    <meta name="author" content="Morten Olsen">
+    <title>CompSci</title>
+    <link rel="stylesheet" href="MyCSS.css">
+</head>
+
+<body>
+
+<!-- Header -->
+<div class="header">
+    <h1>Morten Olsen</h1>
+    <p>3rd Semester Computer Science Student</p>
+</div>
+
+<!-- Navigation bar -->
+<div class="navbar">
+    <a href="index.html">About Me</a>
+    <a class="navactive" href="#">CompSci</a>
+    <a href="hobby.html">Hobby</a>
+    <form id="searchbar" action="MyPHP.php" target="_blank" method="get">
+        <input type="text" name="search" placeholder="Search...">
+    </form>
+</div>
+
+<!-- 1 row containing 3 columns -->
+<div class="row">
+    <!--Left column-->
+    <div class="side">
+        <h2>About Me</h2>
+        <h3>Photo of me (click it):</h3>
+        <img id="pepe" src="images/pepe.png" alt="PictureOfMe.png" onclick="spin()">
+        <h3>Information table:</h3>
+        <table>
+            <tr>
+                <th>The Thing</th>
+                <th>The Value</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>Morten Olsen</td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>Vej 1, 4700 Næstved</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>12345678</td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td>mail@mail.dk</td>
+            </tr>
+            <tr>
+                <td>IT Skills</td>
+                <td>Java, Android, XML, HTML, CSS, JavaScript</td>
+            </tr>
+        </table>
+    </div>
+    <!--Middle column-->
+    <div class="middle">
+        <h1>Computer Science!</h1>
+        <button id="colorButton" type="button" onclick="clickMe()">Click Me!</button>
+        <iframe id="music" src="https://www.youtube.com/embed/e-IWRmpefzE"></iframe>
+    </div>
+    <!--Right column-->
+    <div class="side">
+        <h2>Features of this website</h2>
+        <p>Click these list items to see more info about the features of this website.</p>
+        <ul>
+            <li><a id="flexboxLink" onclick="dropdown('flexboxText', 'flexboxLink')" href="javascript:void(0);">Flexbox</a></li> <!--<a> elements are used here to get the special cursor and to make it impossible to select the text of the box. By writing href="javascript:void(0);", the website doesn't jump to the top when an item is clicked-->
+            <li><p id="flexboxText">This page is built using Flexbox.<br/><br/>Learn more about Flexbox here:<br/><a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">https://www.w3schools.com/css/css3_flexbox.asp</a></p></li>
+            <li><a id="navLink" onclick="dropdown('navText', 'navLink')" href="javascript:void(0);">Sticky Navigation Bar</a></li>
+            <li><p id="navText">Scroll down and see that the top navigation bar is sticky.<br/><br/>Learn more about navigation bars here:<br/><a href="https://www.w3schools.com/css/css_navbar.asp" target="_blank">https://www.w3schools.com/css/css_navbar.asp</a></p></li>
+            <li><a id="rwdLink" onclick="dropdown('rwdText', 'rwdLink')" href="javascript:void(0);">Responsive Web Design (RWD)</a></li>
+            <li><p id="rwdText">By using media queries the style of this website adapts to the size of the user's browser. See the effect by making the browser less wide.<br/><br/>Learn more about RWD here:<br/><a href="https://www.w3schools.com/html/html_responsive.asp" target="_blank">https://www.w3schools.com/html/html_responsive.asp</a></p></li>
+            <li><a id="ulLink" onclick="dropdown('ulText', 'ulLink')" href="javascript:void(0);">Unordered List (&#60;ul&#62;)</a></li>
+            <li><p id="ulText">This is an unordered list changed via CSS.<br/><br/>Learn more about unordered lists and styling them here:<br/><a href="https://www.w3schools.com/html/html_lists.asp" target="_blank">https://www.w3schools.com/html/html_lists.asp</a><br/><a href="https://www.w3schools.com/css/css_list.asp" target="_blank">https://www.w3schools.com/css/css_list.asp</a></p></li>
+            <li><a id="jsLink" onclick="dropdown('jsText', 'jsLink')" href="javascript:void(0);">JavaScript</a></li>
+            <li><p id="jsText">Opening and closing these list items works via JavaScript. So does the button on the <a href="compsci.html" target="_blank">CompSci page</a>. Go click it.<br/><br/>Learn more about JavaScript here:<br/><a href="https://www.w3schools.com/js/default.asp" target="_blank">https://www.w3schools.com/js/default.asp</a></p></li>
+            <li><a id="ifLink" onclick="dropdown('ifText', 'ifLink')" href="javascript:void(0);">Iframe</a></li>
+            <li><p id="ifText">Scroll down to the bottom of the <a href="index.html">About Me page</a> to see an Iframe.<br/><br/>Learn more about Iframes here:<br/><a href="https://www.w3schools.com/html/html_iframe.asp" target="_blank">https://www.w3schools.com/html/html_iframe.asp</a></p></li>
+            <li><a id="formLink" onclick="dropdown('formText', 'formLink')" href="javascript:void(0);">Search / HTML Form / PHP</a></li>
+            <li><p id="formText">The search bar is a HTML form. The form-handler uses PHP. Try searching for something. Not much happens, but it's something.<br/><br/>Learn more about forms here:<br/><a href="https://www.w3schools.com/html/html_forms.asp" target="_blank">https://www.w3schools.com/html/html_forms.asp</a></p></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>Copyright 1989-2019 by Morten Olsen. All Rights Reserved.</p>
+    <p>This website was made using IntelliJ IDEA 2019.2.2 (Ultimate Edition).</p>
+</div>
+
+<script src="MyJavaScripts.js"></script>
+
+</body>
+</html>
