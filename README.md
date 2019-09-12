@@ -1,2 +1,1 @@
-# MyWebPage
-https://mools.live/
+# https://mools.live/
