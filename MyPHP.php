@@ -1,3 +1,5 @@
+<!--Try this instead maybe: https://www.codejava.net/java-ee/servlet/handling-html-form-data-with-java-servlet-->
+
 <html lang="en">
 
 <body>

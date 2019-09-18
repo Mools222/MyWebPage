@@ -95,7 +95,7 @@ body {
 
 .row {
     display: flex;
-    flex-wrap: nowrap; /* If you pick "wrap" instead it will wrap the elements before the media query kicks in */
+    /*flex-wrap: nowrap; !* If you pick "wrap" instead it will wrap the elements before the media query kicks in *! !*This is the default setting*!*/
     /*flex-direction: row; !* This seems to be the default *!*/
     /*justify-content: center; !* I don't need this since I'm setting the width of the columns *!*/
 }
@@ -286,6 +286,9 @@ margin: 10px;
 @media screen and (max-width: 800px) { /* Media query */
     .row, .navbar {
         flex-direction: column;
+    }
+    .navbar a {
+        width: 100%
     }
     #searchbar {
         margin-left: initial; /*Place the search bar to the left*/
