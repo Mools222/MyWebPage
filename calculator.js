@@ -1,4 +1,3 @@
-
 var d1 = document.getElementById("d1");
 var d2 = document.getElementById("d2");
 
@@ -28,21 +27,26 @@ function equals() {
         var command = math[1];
         var n2 = d2.value;
 
-        switch (command) {
-            case "/":
-                d1.value = parseFloat(n1) / parseFloat(n2);
-                break;
-            case "*":
-                d1.value = parseFloat(n1) * parseFloat(n2);
-                break;
-            case "+":
-                d1.value = parseFloat(n1) + parseFloat(n2);
-                break;
-            case "-":
-                d1.value = parseFloat(n1) - parseFloat(n2);
-                break;
-        }
+        doMath(n1, command, n2);
+
         d2.value = "";
+    }
+}
+
+function doMath(n1, command, n2) {
+    switch (command) {
+        case "/":
+            d1.value = parseFloat(n1) / parseFloat(n2);
+            break;
+        case "*":
+            d1.value = parseFloat(n1) * parseFloat(n2);
+            break;
+        case "+":
+            d1.value = parseFloat(n1) + parseFloat(n2);
+            break;
+        case "-":
+            d1.value = parseFloat(n1) - parseFloat(n2);
+            break;
     }
 }
 
@@ -53,22 +57,10 @@ function equals2() {
     var command = math[1];
     var n2 = math[2];
 
-    console.log(n1);
-    console.log(command);
-    console.log(n2);
+    doMath(n1, command, n2);
+}
 
-    switch (command) {
-        case "/":
-            d1.value = parseInt(n1) / parseInt(n2);
-            break;
-        case "*":
-            d1.value = parseInt(n1) * parseInt(n2);
-            break;
-        case "+":
-            d1.value = parseInt(n1) + parseInt(n2);
-            break;
-        case "-":
-            d1.value = parseInt(n1) - parseInt(n2);
-            break;
-    }
+function reset() {
+    d1.value = "";
+    d2.value = "";
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
 </div>
 
 <div class="rowHorizontal">
-    <button onclick="setNumber(7)"  class="o-btn">7</button>
+    <button onclick="setNumber(7)" class="o-btn">7</button>
     <button onclick="setNumber(8)" class="o-btn">8</button>
     <button onclick="setNumber(9)" class="o-btn">9</button>
     <button onclick="math(' / ')" class="o-btn">/</button>
@@ -24,7 +24,7 @@
     <button onclick="setNumber(4)" class="o-btn">4</button>
     <button onclick="setNumber(5)" class="o-btn">5</button>
     <button onclick="setNumber(6)" class="o-btn">6</button>
-    <button onclick="math(' * ')"class="o-btn">*</button>
+    <button onclick="math(' * ')" class="o-btn">*</button>
 </div>
 <div class="rowHorizontal">
     <button onclick="setNumber(3)" class="o-btn">3</button>
@@ -33,13 +33,11 @@
     <button onclick="math(' - ')" class="o-btn">-</button>
 </div>
 <div class="rowHorizontal">
-    <button class="o-btn">,</button>
+    <button onclick="reset()" class="o-btn">C</button>
     <button onclick="setNumber(0)" class="o-btn">0</button>
     <button onclick="equals()" class="o-btn">=</button>
     <button onclick="math(' + ')" class="o-btn">+</button>
-
 </div>
-
 
 <script src="calculator.js"></script>
 
