@@ -11,9 +11,9 @@ function layoutDrawerClose() {
 function changeFood() {
     if (document.getElementById("foodText").innerHTML === "Græsk farsbrød") {
         document.getElementById("foodText").innerHTML = "Torsketårn";
-        document.getElementById("foodImage").src = "images/fish.png";
+        document.getElementById("foodImage").src = "imagesXD/fish.png";
     } else {
         document.getElementById("foodText").innerHTML = "Græsk farsbrød";
-        document.getElementById("foodImage").src = "images/meatloaf.png";
+        document.getElementById("foodImage").src = "imagesXD/meatloaf.png";
     }
 }
