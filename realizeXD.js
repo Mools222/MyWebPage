@@ -1,6 +1,7 @@
 function layoutDrawerOpen() {
     document.getElementById("drawer").style.visibility = "visible";
     document.getElementById("drawerbuttonopen").style.visibility = "hidden";
+    document.getElementById("drawer").style.height = document.body.clientHeight + "px";
 }
 
 function layoutDrawerClose() {

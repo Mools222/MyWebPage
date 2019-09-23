@@ -14,6 +14,19 @@ body {
 }
 
 /**********************************************************************************/
+/* Flexbox containers */
+/**********************************************************************************/
+
+.rowHorizontal {
+    display: flex;
+}
+
+.rowVertical {
+    display: flex;
+    flex-direction: column;
+}
+
+/**********************************************************************************/
 /* Layout drawer */
 /**********************************************************************************/
 
@@ -23,7 +36,6 @@ body {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.9);
     width: 610px;
-    height: 2145px;
     margin-left: 815px;
 }
 
@@ -32,7 +44,8 @@ body {
 }
 
 #row0 * {
-    align-self: end;
+    -webkit-align-self: flex-end; /* Safari 7.0+ */
+    align-self: flex-end;
 }
 
 #row0 button {
@@ -62,19 +75,6 @@ body {
     background-image: url('imagesXD/googlelogo.png');
     background-position: 448px 24px;
     background-repeat: no-repeat;
-}
-
-/**********************************************************************************/
-/* Flexbox containers */
-/**********************************************************************************/
-
-.rowHorizontal {
-    display: flex;
-}
-
-.rowVertical {
-    display: flex;
-    flex-direction: column;
 }
 
 /**********************************************************************************/
@@ -307,13 +307,16 @@ input {
     margin-bottom: 10px;
     border: 1px solid #CACFD2;
     background-color: #A6ADB4;
-    color: #CACFD2;
     border-radius: 6px;
     padding: 12px;
     width: 260px;
     background-image: url('imagesXD/baseline_near_me_white_18dp.png');
     background-position: 220px 10px;
     background-repeat: no-repeat;
+}
+
+::placeholder {
+    color: #CACFD2; /* To make it work in Chrome */
 }
 
 #row5 img {
