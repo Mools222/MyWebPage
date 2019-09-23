@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Morten Olsen">
+    <title>Hva skal vi spise</title>
+    <link rel="stylesheet" href="realizeXD.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nixie+One"/> <!--Font: Nixie One-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!--Icons-->
+</head>
+
+<body>
+
+<div class="layoutdrawer" id="drawer">
+    <div class="rowVertical" id="row0">
+        <a id="drawerbuttonclose" onclick="layoutDrawerClose()" href="javascript:void(0);"><img src="imagesXD/drawerbuttonclose.png" alt="Menu Icon"></a>
+        <button>Login / Register</button>
+        <button id="loginfacebook">Login med Facebook</button>
+        <button id="logingoogle">Login med Google</button>
+        <button>Ugeplan</button>
+        <button>Forside</button>
+        <button>Kontakt</button>
+    </div>
+</div>
+
+<div class="main">
+
+    <div class="rowHorizontal" id="row1">
+        <img id="chefImage" src="imagesXD/chef.png" alt="Chef">
+        <div class="rowVertical">
+            <h1 id="chefHeader1">Hva' skal vi spise?</h1>
+            <h5 id="chefHeader2">En fed inspirationskilde til klog madplanlægning</h5>
+        </div>
+        <a id="drawerbuttonopen" onclick="layoutDrawerOpen()" href="javascript:void(0);"><img src="imagesXD/drawerbuttonopen.png" alt="Menu Icon"></a>
+    </div>
+
+    <div class="rowHorizontal" id="row2">
+        <img id="foodImage" src="imagesXD/meatloaf.png" alt="Chef">
+
+        <div class="rowVertical" id="card">
+            <h2 id="foodText">Græsk farsbrød</h2>
+            <hr id="cardhr">
+            <b>Nærende, græsk inspireret måltil<br>med hakket gris.</b>
+
+            <div class="rowHorizontal rowIcons rowIconsGreen">
+                <i class="material-icons">check_circle</i>
+                <p>græsk</p>
+                <i class="material-icons">check_circle</i>
+                <p>græsk</p>
+                <i class="material-icons">check_circle</i>
+                <p>græsk</p>
+            </div>
+
+            <div class="rowHorizontal rowIcons rowIconsRed">
+                <i class="material-icons">cancel</i>
+                <p>vegetar</p>
+                <i class="material-icons">cancel</i>
+                <p>fisk</p>
+                <i class="material-icons">cancel</i>
+                <p>vegetar</p>
+            </div>
+
+            <div class="rowHorizontal" id="rowCart">
+                <i class="material-icons">shopping_cart</i>
+                <p>Klik nu, få ingredienser leveret lige til tiden...</p>
+            </div>
+
+            <button id="cardbutton" onclick="changeFood()">Hellere noget andet?</button>
+        </div>
+    </div>
+
+    <hr class="hrfull">
+
+    <div class="rowHorizontal" id="row3">
+        <div class="rowVertical" id="row3quote">
+            <img id="andras" src="imagesXD/andras.png" alt="Andras">
+            <h2 id="b">"Det er ofte svært at<br>finde på gode madidéer"</h2>
+        </div>
+        <p id="row3text">Vi har derfor udviklet denne app, som hjælper med hurtigt<br>
+            at sammensætte en fisk madplan. Aliquet, nisi dictum<br>
+            cubilla class habitasse commodo, semper potenti nec ac<br>
+            per egatas. Ac volupat ullamcorper phaselius montes<br>
+            sollicitudin litora ridiculus mi conubia inceptos euismod<br>
+            odio curabitur, tortor eros porta venenatis facilisis quam<br>
+            blandit in ut lobortis consqeuat justo. Hac libero quisque</p>
+        <p>10000 brugere bruger appen hver dag, og de er bare så<br>
+            glade! Nascetur himenaeos morbi gravida porta sapien<br>
+            justo aliquam pellentesque dapibus curae, cursus ultrices<br>
+            suspendisse cras ligula id aenean vulputate tacti,<br>
+            eleifend eros bibendum scelerisque lobortis venenatis</p>
+    </div>
+
+    <hr class="hrfull">
+
+    <img id="curry" src="imagesXD/curry.png" alt="Curry">
+
+    <div class="rowHorizontal" id="row4">
+        <div class="rowVertical">
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis, mollis viverra conubia ligula inceptos laoreet libero<br>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis, mollis viverra conubia ligula inceptos laoreet libero<br>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis, mollis viverra conubia ligula inceptos laoreet libero<br>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis, mollis viverra conubia ligula inceptos laoreet libero<br>
+                eget magna at</p>
+            <p>&nbsp;</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis, mollis viverra conubia ligula inceptos laoreet libero<br>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis, mollis viverra conubia ligula inceptos laoreet libero<br>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis, mollis viverra conubia ligula inceptos laoreet libero<br>
+                curcsus donec est eu blandit platea, feugiat vitae netus orci habitant accumsan placerat morbi nostra.</p>
+        </div>
+        <i>In hac habitasse platea dictumst. Sed nec<br>
+            venenatis odio. Nulla faucibus ipsum sed faucibus<br>
+            accumsan. Donec rhoncus luctus.</i>
+    </div>
+
+    <hr class="hrfull">
+
+</div>
+
+<div class="footer">
+    <div class="rowHorizontal" id="row5">
+        <b>LOGO</b>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Discovery</a>
+            <a href="#">Photos</a>
+            <a href="#">Contact</a>
+        </div>
+        <div>
+            <a href="#">About</a>
+            <a href="#">Help</a>
+            <a href="#">Terms</a>
+            <a href="#">Guidelines</a>
+        </div>
+        <div>
+            <a href="#">Testimonials</a>
+            <a href="#">Advertise</a>
+            <a href="#">Integrations</a>
+            <a href="#">Careers</a>
+        </div>
+        <div class="rowVertical" id="search">
+            <form action="/realizeXD.php" target="_blank" method="get">
+                <input type="text" name="search" placeholder="Email"><br>
+            </form>
+            <p>Stay in touch with us for the freshest products!</p>
+        </div>
+        <a href="https://instagram.com/"><img src="imagesXD/icons8-instagram-50.png" alt="Insta"></a>
+        <a href="https://twitter.com/"><img src="imagesXD/icons8-twitter-50.png" alt="Twitter"></a>
+        <a href="https://facebook.com/"><img src="imagesXD/icons8-facebook-f-24.png" alt="Facebook"></a>
+        <a href="https://google.com/"><img src="imagesXD/icons8-globe-24.png" alt="Web"></a>
+    </div>
+
+
+</div>
+
+<script src="realizeXD.js"></script>
+
+</body>
+
+</html>
