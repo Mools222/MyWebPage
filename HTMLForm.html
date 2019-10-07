@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="HTMLForm.css">
+</head>
+<body>
+<pre id="pre"> # </pre>
+<div class="jumbotron">
+    <h1 class="display-4" onclick="demoPromiseConstructor();">Hello, forms!</h1>
+    <p class="lead">Eksempel på en form fra fra <a href="fra https://www.w3schools.com/Bootstrap/bootstrap_forms.asp">W3Schools</a>. Se også dette link om <a href="https://gist.github.com/joyrexus/7307312">det smarte i jQuery</a>.</p>
+    <!-- https://beeceptor.com/console/mools -->
+    <!-- Fix: The "name" attribute was missing -->
+    <form action="https://mools.free.beeceptor.com" target="_blank" method="get">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" name="check" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Example select</label>
+            <select class="form-control" id="exampleFormControlSelect1" name="select">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="textarea"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<button onclick="loginToObject()" type="button" class="btn btn-primary">Login to object</button>
+<button id="validateEmailButton" type="button" class="btn btn-primary">Validate email</button>
+<button id="validatePasswordButton" type="button" class="btn btn-primary">Validate password</button>
+
+<script src="HTMLForm.js"></script>
+
+</body>
+</html>

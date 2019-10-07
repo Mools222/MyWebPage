@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="ChuckNorris.css">
+</head>
+<body>
+
+<h1>Chuck Norris Facts</h1>
+
+<table id="table">
+    <tr>
+        <th>Category</th>
+        <th>Created At</th>
+        <th>Icon</th>
+        <th>ID</th>
+        <th>Updated At</th>
+        <th>URL</th>
+        <th>Fact</th>
+    </tr>
+</table>
+
+<br><br>
+
+<form id="randomForm" action="javascript:void(0);">
+    <fieldset>
+        <legend>Random:</legend>
+        <input type="submit" value="Random fact">
+    </fieldset>
+</form>
+
+<form id="categoryForm" action="javascript:void(0);">
+    <fieldset>
+        <legend>Categories:</legend>
+        <select id="dropdown" name="category" size="1"></select>
+        <input type="submit" value="Fact From Category">
+    </fieldset>
+</form>
+
+<form id="searchForm" action="javascript:void(0);">
+    <fieldset>
+        <legend>Search:</legend>
+        <input id="searchBar" name="search" type="text" placeholder="Search">
+        <input type="submit" value="Fact(s) From Search">
+    </fieldset>
+</form>
+
+<script src="ChuckNorris.js"></script>
+
+</body>
+</html>

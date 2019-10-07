@@ -1,0 +1,34 @@
+/* Opgave
+
+Du skal forke denne "pen" til at begynde med. Herefter skal du rette det til som det står her:
+
+A. Træk alt data ind i loginObjektet fra formen. Log objektet i konsol, eller vis det i browseren, i f.eks. <pre> tagget
+
+B. Udbyg formularen med flere forskellige HTML5 input-typer.
+
+C. Skriv en valideringsfunction til e-mail og password værdierne.
+
+D. Send dataen i en GET request til en endpoint på https://beeceptor.com/, f.eks. til https://andyhu.free.beeceptor.com
+
+Dette kan gøres på flere måder, f.eks. ved at opgive en action-attribut for form-tagget, eller ved at bruge AJAX, dvs. xhttp.open("GET", "url", true); xhttp.send()
+
+Se mere om form action her: https://www.w3schools.com/tags/att_form_action.asp
+Læs om AJAX her: https://www.w3schools.com/js/js_ajax_intro.asp
+
+*/
+
+pre {
+    border-radius: 10px;
+    color: white;
+    background: rgba(50, 115, 220, 0.3);
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco,
+    "Bitstream Vera Sans Mono";
+    font-size: 16px;
+    min-height: 60px;
+    padding: 10px;
+    margin: 10px;
+}
+
+h1 {
+    cursor: pointer;
+}

@@ -1,0 +1,48 @@
+h1 {
+    color: blue;
+    text-shadow: 3px 2px gray;
+    font-size: 3em;
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    /*width: 100%;*/
+    /*overflow-wrap: break-word;*/
+    /*word-wrap: break-word;*/
+}
+
+th {
+    text-align: left;
+    background-color: blue;
+    color: white;
+    font-size: 1.1vw;
+}
+
+th, td {
+    padding: 10px;
+}
+
+tr {
+    max-width: 20%;
+}
+
+td {
+    word-break: break-word;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+tr:hover {
+    background-color: lightgray;
+}
