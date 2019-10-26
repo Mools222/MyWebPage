@@ -9,6 +9,10 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+    /* Sticky footer (https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/) */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /**********************************************************************************/
@@ -94,6 +98,7 @@ body {
 /**********************************************************************************/
 
 .row {
+    flex: 1; /* Sticky footer (https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/) */
     display: flex;
     /*flex-wrap: nowrap; !* If you pick "wrap" instead it will wrap the elements before the media query kicks in *! !*This is the default setting*!*/
     /*flex-direction: row; !* This seems to be the default *!*/
