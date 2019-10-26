@@ -22,7 +22,7 @@ function loginToObject() {
 
     loginObjekt["email"] = email.value;
     loginObjekt["password"] = password.value;
-    loginObjekt["checkBox"] = checkBox.value;
+    loginObjekt["checkBox"] = checkBox.checked;
     console.log(loginObjekt);
     lead.innerHTML += JSON.stringify(loginObjekt) + "\n # ";
 }
